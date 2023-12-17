@@ -1,12 +1,12 @@
 name: pawkit
 description: A new Flutter project.
 version: 1.0.0+1
-environment: 
-  sdk: '>=2.12.0 <3.0.0'
-dependencies: 
-  flutter: 
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+dependencies:
+  flutter:
     sdk: flutter
-  flutter_localizations: 
+  flutter_localizations:
     sdk: flutter
   flutter_bloc: ^8.0.0
   connectivity_plus: ^2.3.6
@@ -17,17 +17,26 @@ dependencies:
   flutter_rating_bar: ^4.0.0
   readmore: ^2.1.0
   google_maps_flutter: ^2.0.0
-dev_dependencies: 
-  flutter_test: 
-    sdk: flutter
-flutter: 
+  url_launcher: ^6.0.10
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/pawkit_app_icon.png"
+
+  flutter_test:
+sdk: flutter
+flutter:
   uses-material-design: true
-  assets: 
+  assets:
     - assets/
     - assets/images/
-  fonts: 
+  fonts:
     - family: Inter
-      fonts: 
+      fonts:
         - asset: assets/fonts/InterSemiBold.ttf
           weight: 600
         - asset: assets/fonts/InterBold.ttf
@@ -39,6 +48,6 @@ flutter:
         - asset: assets/fonts/InterBlackItalic.ttf
           weight: 900
     - family: Poppins
-      fonts: 
+      fonts:
         - asset: assets/fonts/PoppinsBold.ttf
           weight: 700

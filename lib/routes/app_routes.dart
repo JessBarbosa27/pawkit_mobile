@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pawkit/presentation/about_dev/about_dev_screen.dart';
 import 'package:pawkit/presentation/splash_screen/splash_screen.dart';
 import 'package:pawkit/presentation/login_screen/login_screen.dart';
 import 'package:pawkit/presentation/signup_screen/signup_screen.dart';
@@ -58,6 +59,8 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
+  static const String aboutDevScreen = '/about_dev_screen';
+
   static const String initialRoute = '/initialRoute';
 
   static Map<String, WidgetBuilder> get routes => {
@@ -78,6 +81,7 @@ class AppRoutes {
         scheduleTabContainerScreen: ScheduleTabContainerScreen.builder,
         messageTabContainerScreen: MessageTabContainerScreen.builder,
         appNavigationScreen: AppNavigationScreen.builder,
+        aboutDevScreen: AboutDevScreen.builder,
         initialRoute: SplashScreen.builder
       };
 }

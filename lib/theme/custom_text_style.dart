@@ -91,6 +91,9 @@ class CustomTextStyles {
   static get labelSmallCyan300 => theme.textTheme.labelSmall!.copyWith(
         color: appTheme.cyan300,
       );
+  static get labelSmallBlack => theme.textTheme.labelSmall!.copyWith(
+        color: appTheme.black,
+      );
   // Title text style
   static get titleMedium18 => theme.textTheme.titleMedium!.copyWith(
         fontSize: 18.fSize,

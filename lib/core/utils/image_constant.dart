@@ -5,6 +5,8 @@ class ImageConstant {
   // Splash Screen images
   static String imgHiDocLogo = '$imagePath/img_hi_doc_logo.png';
 
+  static String imgPawkitLogo = '$imagePath/pawkit_app_logo.png';
+
   // Signup images
   static String imgUser = '$imagePath/img_user.svg';
 
@@ -55,6 +57,9 @@ class ImageConstant {
 
   // Settigns images
   static String imgProfile = '$imagePath/img_profile.png';
+
+  static String puppy_golden_retriever =
+      '$imagePath/puppy_golden_retriever.jpg';
 
   static String imgCamera = '$imagePath/img_camera.svg';
 
@@ -178,6 +183,8 @@ class ImageConstant {
 
   static String imgNavProfile = '$imagePath/img_nav_profile.svg';
 
+  static String imgNavAboutDev = '$imagePath/img_nav_about_dev.png';
+
   static String imgArrowLeft = '$imagePath/img_arrow_left.svg';
 
   static String imgOverflowMenu = '$imagePath/img_overflow_menu.svg';
@@ -197,4 +204,7 @@ class ImageConstant {
   static String imgMenuGray500 = '$imagePath/img_menu_gray_500.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+  // About Dev Images
+  static String jessResume = '$imagePath/Jess_Resume_PNG.png';
 }

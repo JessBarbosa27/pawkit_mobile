@@ -37,6 +37,12 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       activeIcon: ImageConstant.imgNavProfile,
       title: "lbl_profile".tr,
       type: BottomBarEnum.Profile,
+    ),
+    BottomMenuModel(
+      icon: ImageConstant.imgPawkitLogo,
+      activeIcon: ImageConstant.imgPawkitLogo,
+      title: "lbl_developer".tr,
+      type: BottomBarEnum.AboutDev,
     )
   ];
 
@@ -62,14 +68,14 @@ class CustomBottomBarState extends State<CustomBottomBar> {
                   imagePath: bottomMenuList[index].icon,
                   height: 21.v,
                   width: 20.h,
-                  color: appTheme.gray500,
+                  color: appTheme.black,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 4.v),
                   child: Text(
                     bottomMenuList[index].title ?? "",
                     style: theme.textTheme.labelSmall!.copyWith(
-                      color: appTheme.gray500,
+                      color: appTheme.black,
                     ),
                   ),
                 ),
@@ -83,14 +89,14 @@ class CustomBottomBarState extends State<CustomBottomBar> {
                   imagePath: bottomMenuList[index].activeIcon,
                   height: 22.v,
                   width: 19.h,
-                  color: appTheme.cyan300,
+                  color: appTheme.blueGray600,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 4.v),
                   child: Text(
                     bottomMenuList[index].title ?? "",
-                    style: CustomTextStyles.labelSmallCyan300.copyWith(
-                      color: appTheme.cyan300,
+                    style: CustomTextStyles.labelSmallBlack.copyWith(
+                      color: appTheme.blueGray600,
                     ),
                   ),
                 ),
@@ -114,6 +120,7 @@ enum BottomBarEnum {
   Messages,
   Appointment,
   Profile,
+  AboutDev,
 }
 
 class BottomMenuModel {

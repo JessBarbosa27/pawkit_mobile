@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
                   child: Column(children: [
                     Spacer(),
                     CustomImageView(
-                        imagePath: ImageConstant.imgHiDocLogo,
+                        imagePath: ImageConstant.imgPawkitLogo,
                         height: 368.v,
                         width: 338.h),
                     SizedBox(height: 87.v),

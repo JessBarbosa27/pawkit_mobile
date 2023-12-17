@@ -22,7 +22,8 @@ class AppbarTrailingImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        onTap!.call();
+        // onTap!.call();
+        openAboutDevScreen(context);
       },
       child: Padding(
         padding: margin ?? EdgeInsets.zero,
@@ -34,5 +35,9 @@ class AppbarTrailingImage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  openAboutDevScreen(BuildContext context) {
+    NavigatorService.pushNamed(AppRoutes.aboutDevScreen);
   }
 }

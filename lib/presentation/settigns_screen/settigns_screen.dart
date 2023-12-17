@@ -51,7 +51,7 @@ class SettignsScreen extends StatelessWidget {
                     Align(
                       alignment: Alignment.center,
                       child: Text(
-                        "lbl_amelia_renata".tr,
+                        "lbl_scooby".tr,
                         style: CustomTextStyles.titleMediumPrimary,
                       ),
                     ),
@@ -145,7 +145,7 @@ class SettignsScreen extends StatelessWidget {
         alignment: Alignment.bottomRight,
         children: [
           CustomImageView(
-            imagePath: ImageConstant.imgProfile,
+            imagePath: ImageConstant.puppy_golden_retriever,
             height: 80.adaptSize,
             width: 80.adaptSize,
             radius: BorderRadius.circular(
@@ -233,8 +233,7 @@ class SettignsScreen extends StatelessWidget {
   Widget _buildBottomBarColumn(BuildContext context) {
     return CustomBottomBar(
       onChanged: (BottomBarEnum type) {
-        Navigator.pushNamed(
-            navigatorKey.currentContext!, getCurrentRoute(type));
+        Navigator.pushNamed(context, getCurrentRoute(type));
       },
     );
   }
@@ -286,13 +285,15 @@ class SettignsScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return "/";
+        return AppRoutes.dashboardScreen;
       case BottomBarEnum.Messages:
         return AppRoutes.messageTabContainerScreen;
       case BottomBarEnum.Appointment:
         return AppRoutes.scheduleTabContainerScreen;
       case BottomBarEnum.Profile:
         return AppRoutes.settignsScreen;
+      case BottomBarEnum.AboutDev:
+        return AppRoutes.aboutDevScreen;
       default:
         return "/";
     }

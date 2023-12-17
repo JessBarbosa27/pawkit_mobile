@@ -8,7 +8,7 @@ final Map<String, String> enUs = {
   "msg_don_t_have_an_account2": "Don’t have an account?",
   "msg_forgot_password": "Forgot Password?",
   "msg_sign_in_to_continue": "Sign in to continue",
-  "msg_welcome_to_hidoc": "Welcome to HiDoc",
+  "msg_welcome_to_pawkit": "Welcome to Pawkit",
 
   // Signup Screen
   "lbl_full_name": "Full Name",
@@ -25,14 +25,15 @@ final Map<String, String> enUs = {
   "lbl_4_8": "4,8",
   "lbl_4_9": "4,9",
   "lbl_dr_stevi_jessi": "Dr. Stevi Jessi",
-  "lbl_healt_article": "Healt article",
+  "lbl_health_article": "health article",
+  "lbl_timeline": "Timeline",
   "lbl_learn_more": "Learn More",
   "lbl_orthopedist": "Orthopedist",
   "lbl_psychologist": "Psychologist",
   "msg_dr_marcus_horizo": "Dr. Marcus Horizo",
-  "msg_early_protection": "Early protection for\nyour family healt",
-  "msg_find_your_desire": "Find your desire \nhealt solution",
-  "msg_search_doctor_drugs": "Search doctor, drugs, articles...",
+  "msg_early_protection": "Early protection for\nyour pet health",
+  "msg_find_your_desire": "Find your desire \npet health solution",
+  "msg_search_doctor_drugs": "Search doctor, veterinarian, drugs, articles...",
 
   // Dr List Screen
   "lbl_dr_gerty_cori": "Dr. Gerty Cori",
@@ -55,7 +56,7 @@ final Map<String, String> enUs = {
   "lbl_25": "25",
   "lbl_26": "26",
   "lbl_about": "About",
-  "lbl_doctor_details": "Doctor Details",
+  "lbl_doctor_details": "Veterinarian Details",
   "lbl_fri": "Fri",
   "lbl_mon": "Mon",
   "lbl_sat": "Sat",
@@ -72,7 +73,7 @@ final Map<String, String> enUs = {
   "lbl_chest_pain": "Chest pain",
   "lbl_date": "Date",
   "lbl_reason": "Reason",
-  "msg_wednesday_jun_23": "Wednesday, Jun 23, 2021 | 10:00 AM",
+  "msg_wednesday_jun_23": "Wednesday, Dec 13, 2023 | 10:00 AM",
 
   // Chat Screen
   "lbl_10_min_ago": "10 min ago",
@@ -85,13 +86,13 @@ final Map<String, String> enUs = {
       "I have suffering from headache \nand cold for 3 days, I took 2 \ntablets of dolo, but still pain",
   "msg_ok_do_you_have": "Ok, Do you have fever? is the\nheadchace severe",
   "msg_type_message": "Type message ...",
-  "msg_you_can_consult": "You can consult your problem to the doctor",
+  "msg_you_can_consult": "You can consult your problem to the veterinarian",
 
   // Settigns Screen
   "lbl_103lbs": "103lbs",
   "lbl_215bpm": "215bpm",
   "lbl_756cal": "756cal",
-  "lbl_amelia_renata": "Amelia Renata",
+  "lbl_scooby": "Scooby",
   "lbl_calories": "Calories",
   "lbl_faqs": "FAQs",
   "lbl_heart_rate": "Heart rate",
@@ -134,9 +135,8 @@ final Map<String, String> enUs = {
   "lbl_covid_19": "Covid-19",
   "lbl_diet": "Diet",
   "lbl_fitness": "Fitness",
-  "lbl_jun_10_20212": "Jun 10, 2021",
-  "lbl_jun_12_2021": "Jun 12, 2021",
-  "lbl_jun_9_2021": "Jun 9, 2021 ",
+  "lbl_dec_17_20232": "Dec 17, 2023",
+  "lbl_dec_17_2023": "Dec 17, 2023",
   "msg_comparing_the_astrazeneca":
       "Comparing the \nAstraZeneca and \nSinovac COVID-19 \nVaccines",
   "msg_popular_articles": "Popular Articles",
@@ -160,8 +160,8 @@ final Map<String, String> enUs = {
 
   // Schedule Screen
   "lbl_10_30_am": "10:30 AM",
-  "lbl_26_06_2021": "26/06/2021",
-  "lbl_28_06_2021": "28/06/2021",
+  "lbl_26_06_2021": "26/11/2023",
+  "lbl_28_06_2021": "28/11/2023",
   "lbl_2_00_pm": "2:00 PM",
   "lbl_cancel": "Cancel",
   "lbl_confirmed": "Confirmed",
@@ -202,7 +202,7 @@ final Map<String, String> enUs = {
   "lbl_dr_alysa_hana": "Dr. Alysa Hana",
   "lbl_dr_maria_elena": "Dr. Maria Elena",
   "lbl_home": "Home",
-  "lbl_jun_10_2021": "Jun 10, 2021 ",
+  "lbl_dec_17_2023": "Dec 17, 2023",
   "lbl_messages": "Messages",
   "lbl_obh_combi": "OBH Combi",
   "lbl_panadol": "Panadol",
@@ -210,19 +210,19 @@ final Map<String, String> enUs = {
   "lbl_payment_detail": "Payment Detail",
   "lbl_payment_method": "Payment Method",
   "lbl_profile": "Profile",
+  "lbl_developer": "Developer",
   "lbl_read_more": "Read more",
   "lbl_see_all": "See all",
   "lbl_sign_in": "Sign In",
   "lbl_sign_up": "Sign Up",
-  "lbl_top_doctor": "Top Doctor",
+  "lbl_top_doctor": "Top Veterinarian",
   "lbl_total": "Total",
   "lbl_visa": "VISA",
   "lbl_your_email": "Your Email",
   "msg_aditional_discount": "Aditional Discount",
   "msg_dr_marcus_horizon": "Dr. Marcus Horizon",
   "msg_hello_how_can_i": "Hello, How can i help you?",
-  "msg_the_25_healthiest":
-      "The 25 Healthiest Fruits You Can Eat, According to a Nutritionist",
+  "msg_the_25_healthiest": "The 25 Healthiest Snacks for your Pet",
 
 // Network Error String
   "msg_network_err": "Network Error",
@@ -232,4 +232,10 @@ final Map<String, String> enUs = {
   "err_msg_please_enter_valid_email": "Please enter valid email",
   "err_msg_please_enter_valid_password": "Please enter valid password",
   "err_msg_please_enter_valid_text": "Please enter valid text",
+
+  // About Dev Screen
+  "lbl_dev1_name": "Jess Barbosa",
+  "dev1_git_url": "https://github.com/JessBarbosa27",
+  "dev1_linkedIn_url": "www.linkedin.com/in/jess-barbosa",
+  "lbl_dev1_phone": "+91 9767552603",
 };

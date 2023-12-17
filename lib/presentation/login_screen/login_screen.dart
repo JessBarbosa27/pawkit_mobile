@@ -41,6 +41,7 @@ class LoginScreen extends StatelessWidget {
                           selector: (state) => state.emailController,
                           builder: (context, emailController) {
                             return CustomTextFormField(
+                                autofocus: false,
                                 controller: emailController,
                                 hintText: "lbl_your_email".tr,
                                 textInputType: TextInputType.emailAddress,
@@ -69,6 +70,7 @@ class LoginScreen extends StatelessWidget {
                           selector: (state) => state.passwordController,
                           builder: (context, passwordController) {
                             return CustomTextFormField(
+                                autofocus: false,
                                 controller: passwordController,
                                 hintText: "lbl_password".tr,
                                 textInputAction: TextInputAction.done,
@@ -128,11 +130,9 @@ class LoginScreen extends StatelessWidget {
   Widget _buildPageTitle(BuildContext context) {
     return Column(children: [
       CustomImageView(
-          imagePath: ImageConstant.imgHiDocLogo42x115,
-          height: 42.v,
-          width: 115.h),
+          imagePath: ImageConstant.imgPawkitLogo, height: 140.v, width: 190.h),
       SizedBox(height: 26.v),
-      Text("msg_welcome_to_hidoc".tr,
+      Text("msg_welcome_to_pawkit".tr,
           style: CustomTextStyles.titleMediumOnPrimaryContainer),
       SizedBox(height: 12.v),
       Text("msg_sign_in_to_continue".tr,
@@ -143,7 +143,7 @@ class LoginScreen extends StatelessWidget {
   /// Navigates to the signupScreen when the action is triggered.
   onTapSignIn(BuildContext context) {
     NavigatorService.pushNamed(
-      AppRoutes.signupScreen,
+      AppRoutes.dashboardScreen,
     );
   }
 

@@ -60,6 +60,7 @@ class DashboardScreen extends StatelessWidget {
                                                 (context, searchController) {
                                               return CustomSearchView(
                                                   controller: searchController,
+                                                  autofocus: false,
                                                   hintText:
                                                       "msg_search_doctor_drugs"
                                                           .tr);
@@ -73,7 +74,7 @@ class DashboardScreen extends StatelessWidget {
                                     SizedBox(height: 10.v),
                                     _buildDoctor(context),
                                     SizedBox(height: 31.v),
-                                    _buildHealtArticleSee(context),
+                                    _buildTimeline(context),
                                     SizedBox(height: 12.v),
                                     _buildTwentyFour(context)
                                   ]))))
@@ -147,7 +148,8 @@ class DashboardScreen extends StatelessWidget {
                   width: 106.h,
                   text: "lbl_learn_more".tr,
                   buttonStyle: CustomButtonStyles.fillCyan,
-                  buttonTextStyle: CustomTextStyles.labelLargePrimarySemiBold)
+                  buttonTextStyle: CustomTextStyles.labelLargePrimarySemiBold),
+              AboutDialog()
             ]));
   }
 
@@ -203,7 +205,25 @@ class DashboardScreen extends StatelessWidget {
         padding: EdgeInsets.only(right: 23.h),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Text("lbl_healt_article".tr, style: theme.textTheme.titleMedium),
+          Text("lbl_health_article".tr, style: theme.textTheme.titleMedium),
+          GestureDetector(
+              onTap: () {
+                onTapTxtSeeAll1(context);
+              },
+              child: Padding(
+                  padding: EdgeInsets.only(bottom: 3.v),
+                  child: Text("lbl_see_all".tr,
+                      style: CustomTextStyles.labelLargeCyan300)))
+        ]));
+  }
+
+  /// Section Widget
+  Widget _buildTimeline(BuildContext context) {
+    return Padding(
+        padding: EdgeInsets.only(right: 23.h),
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          Text("lbl_timeline".tr, style: theme.textTheme.titleMedium),
           GestureDetector(
               onTap: () {
                 onTapTxtSeeAll1(context);
@@ -247,7 +267,7 @@ class DashboardScreen extends StatelessWidget {
                         Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("lbl_jun_10_2021".tr,
+                              Text("lbl_dec_17_2023".tr,
                                   style: theme.textTheme.labelSmall),
                               Container(
                                   height: 2.adaptSize,
@@ -270,7 +290,7 @@ class DashboardScreen extends StatelessWidget {
   /// Section Widget
   Widget _buildBottomBar(BuildContext context) {
     return CustomBottomBar(onChanged: (BottomBarEnum type) {
-      Navigator.pushNamed(navigatorKey.currentContext!, getCurrentRoute(type));
+      Navigator.pushNamed(context, getCurrentRoute(type));
     });
   }
 
@@ -278,13 +298,15 @@ class DashboardScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return "/";
+        return AppRoutes.dashboardScreen;
       case BottomBarEnum.Messages:
         return AppRoutes.messageTabContainerScreen;
       case BottomBarEnum.Appointment:
         return AppRoutes.scheduleTabContainerScreen;
       case BottomBarEnum.Profile:
         return AppRoutes.settignsScreen;
+      case BottomBarEnum.AboutDev:
+        return AppRoutes.aboutDevScreen;
       default:
         return "/";
     }

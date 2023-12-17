@@ -176,8 +176,7 @@ class ScheduleTabContainerScreenState extends State<ScheduleTabContainerScreen>
   Widget _buildBottomBar(BuildContext context) {
     return CustomBottomBar(
       onChanged: (BottomBarEnum type) {
-        Navigator.pushNamed(
-            navigatorKey.currentContext!, getCurrentRoute(type));
+        Navigator.pushNamed(context, getCurrentRoute(type));
       },
     );
   }
@@ -186,13 +185,15 @@ class ScheduleTabContainerScreenState extends State<ScheduleTabContainerScreen>
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return "/";
+        return AppRoutes.dashboardScreen;
       case BottomBarEnum.Messages:
         return AppRoutes.messageTabContainerScreen;
       case BottomBarEnum.Appointment:
         return AppRoutes.scheduleTabContainerScreen;
       case BottomBarEnum.Profile:
         return AppRoutes.settignsScreen;
+      case BottomBarEnum.AboutDev:
+        return AppRoutes.aboutDevScreen;
       default:
         return "/";
     }

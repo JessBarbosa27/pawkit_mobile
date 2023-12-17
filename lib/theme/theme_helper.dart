@@ -194,6 +194,11 @@ class PrimaryColors {
   // Teal
   Color get teal300 => Color(0XFF33C0B3);
   Color get teal50 => Color(0XFFDCF6F4);
+
+  Color get white => Color.fromARGB(255, 255, 255, 255);
+  Color get black => Color.fromARGB(255, 0, 0, 0);
+
+  Color get yellow => Color.fromARGB(255, 217, 255, 0);
 }
 
 PrimaryColors get appTheme => ThemeHelper().themeColor();
